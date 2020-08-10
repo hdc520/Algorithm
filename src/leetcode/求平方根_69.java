@@ -2,7 +2,7 @@ package leetcode;
 
 public class 求平方根_69 {
     public static void main(String[] args) {
-        System.out.println(mySqrt(15));
+        System.out.println(mySqrt(624));
     }
 
     public static int mySqrt(int num){
@@ -15,7 +15,7 @@ public class 求平方根_69 {
             }else if(mid*mid>num){
                 right=mid-1;
             }else{
-                ans=left;
+                ans=mid;
                 left=mid+1;
             }
         }
