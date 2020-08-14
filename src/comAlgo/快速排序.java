@@ -8,26 +8,26 @@ public class 快速排序 {
             System.out.print(i+" ");
         }
     }
-    public static void quickSort(int nums[],int low,int high){
-        if(low<high){
-            int partition=getPartition(nums,low,high);
-            quickSort(nums,low,partition-1);
-            quickSort(nums,partition+1,high);
+    public static void quickSort(int nums[],int left,int right){
+        if(left<right){
+            int partition=getPartition(nums,left,right);
+            quickSort(nums,left,partition-1);
+            quickSort(nums,partition+1,right);
         }
     }
-    public static int getPartition(int nums[],int low,int high){
-        int temp=nums[low];
-        while(low<high){
-            while(low<high&&temp<nums[high]){
-                high--;
+    public static int getPartition(int nums[],int left,int right){
+        int temp=nums[left];
+        while(left<right){
+            while(left<right&&temp<nums[right]){
+                right--;
             }
-            nums[low]=nums[high];
-            while(low<high&&temp>nums[low]){
-                low++;
+            nums[left]=nums[right];
+            while(left<right&&temp>nums[left]){
+                left++;
             }
-            nums[high]=nums[low];
+            nums[right]=nums[left];
         }
-        nums[low]=temp;
-        return low;
+        nums[left]=temp;
+        return left;
     }
 }
