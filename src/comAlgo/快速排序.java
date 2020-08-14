@@ -1,5 +1,6 @@
 package comAlgo;
 
+//利用三位取中法可以优化快速排序
 public class 快速排序 {
     public static void main(String[] args) {
         int nums[]=new int[]{0,1,9,2,5,3,7,4,8,6};
