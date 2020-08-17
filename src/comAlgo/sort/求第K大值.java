@@ -1,4 +1,4 @@
-package comAlgo;
+package comAlgo.sort;
 
 public class 求第K大值 {
     public static void main(String[] args) {

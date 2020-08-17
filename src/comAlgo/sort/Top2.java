@@ -1,4 +1,4 @@
-package comAlgo;
+package comAlgo.sort;
 
 public class Top2 {
     public static void main(String[] args) {

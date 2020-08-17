@@ -1,4 +1,4 @@
-package comAlgo;
+package comAlgo.sort;
 
 public class 堆排序 {
     public static void main(String[] args) {

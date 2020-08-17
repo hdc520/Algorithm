@@ -1,4 +1,4 @@
-package comAlgo;
+package comAlgo.sort;
 
 //利用三位取中法可以优化快速排序
 public class 快速排序 {
