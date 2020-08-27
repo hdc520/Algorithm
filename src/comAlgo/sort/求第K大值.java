@@ -2,7 +2,8 @@ package comAlgo.sort;
 
 public class 求第K大值 {
     public static void main(String[] args) {
-        System.out.println(findKthLargest(new int[]{0,1,2,3,6,7,9,4,5,8},4));
+
+        System.out.println(findKthLargest(new int[]{11,0,1,2,3,6,7,9,4,5,8},4));
     }
     public static int findKthLargest(int nums[],int k){
         int left=0,right=nums.length-1;
