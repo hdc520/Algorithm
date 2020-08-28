@@ -22,6 +22,13 @@ public class 二叉树的遍历 {
         //后序遍历
         System.out.println();
         postDFS(root);
+        //求树高
+        System.out.println();
+        System.out.println("树高："+treeHigh(root));
+        //求叶子节点个数
+        System.out.println("叶子节点个数："+leafNum(root));
+        //判断是否是平衡二叉树
+        System.out.println("判断是否是平衡二叉树："+judgeBalanced(root));
     }
 
     //层次遍历
@@ -97,5 +104,37 @@ public class 二叉树的遍历 {
                 }
             }
         }
+    }
+
+    //求树高
+    public static int treeHigh(TreeNode root){
+        if(root==null){
+            return 0;
+        }
+        int left=treeHigh(root.left)+1;
+        int right=treeHigh(root.right)+1;
+        return left>right?left:right;
+    }
+
+    //求叶子节点
+    public static int leafNum(TreeNode root){
+        if(root==null){
+            return 0;
+        }else if(root.left==null&&root.right==null){
+            return 1;
+        }
+        return leafNum(root.left)+leafNum(root.right);
+    }
+    //判断是否是平衡二叉树
+    public static boolean judgeBalanced(TreeNode root){
+        if(root==null){
+            return true;
+        }
+        int left=treeHigh(root.left);
+        int right=treeHigh(root.right);
+        if(Math.abs(left-right)>1){
+            return false;
+        }
+        return judgeBalanced(root.right)&&judgeBalanced(root.left);
     }
 }
