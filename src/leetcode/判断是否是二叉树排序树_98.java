@@ -15,10 +15,10 @@ public class 判断是否是二叉树排序树_98 {
         if(root==null){
             return true;
         }
-        if(root.val>=max||root.val<=min){
-            return false;
+        if(root.val<max&&root.val>min){
+            return bfs(root.left,root.val,min)&&bfs(root.right,max,root.val);
         }
-        return bfs(root.left,root.val,min)&&bfs(root.right,max,root.val);
+        return false;
     }
 
 }
