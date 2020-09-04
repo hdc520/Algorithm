@@ -1,6 +1,6 @@
 package leetcode;
 
-public class 加一_66 {
+public class A_66_加一 {
     public static void main(String[] args) {
         int nums[]=new int[]{9,9,9,9,9,9};
         for(int i:plusOne(nums)){
