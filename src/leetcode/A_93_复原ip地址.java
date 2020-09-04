@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class 复原ip地址_93 {
+public class A_93_复原ip地址 {
     public static void main(String[] args) {
         for(String s:restoreIpAddresses("25525511135")){
             System.out.println(s);
