@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class 无重复的全排列_46 {
+public class A_46_无重复的全排列 {
     public static void main(String[] args) {
         List<List<Integer>> ans=premute(new int[]{2,3,4});
         for(List l:ans){
