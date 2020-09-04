@@ -2,7 +2,7 @@ package leetcode;
 
 import comAlgo.list.ListNode;
 
-public class 链表表示的两数之和_2 {
+public class A_2_链表表示的两数之和 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head=new ListNode(-1);
         ListNode r=head;
