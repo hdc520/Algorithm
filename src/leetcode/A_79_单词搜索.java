@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class 单词搜索_79 {
+public class A_79_单词搜索 {
     static boolean flag=false;
     public static void main(String[] args) {
         char board[][]=new char[][]{{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}};
