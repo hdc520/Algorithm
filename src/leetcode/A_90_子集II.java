@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class 子集II_90 {
+public class A_90_子集II {
     public static List<List<Integer>> ans;
     public static void main(String[] args) {
         subsetsWithDup(new int[]{1,2,2});
