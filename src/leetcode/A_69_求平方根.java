@@ -1,6 +1,6 @@
 package leetcode;
 
-public class 求平方根_69 {
+public class A_69_求平方根 {
     public static void main(String[] args) {
         System.out.println(mySqrt(624));
     }
