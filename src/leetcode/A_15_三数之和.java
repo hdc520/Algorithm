@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.*;
 
-public class 三数之和_15 {
+public class A_15_三数之和 {
     /*
     注意去重方法
      */
