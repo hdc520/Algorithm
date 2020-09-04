@@ -1,6 +1,6 @@
 package leetcode;
 
-public class 进制求和_67 {
+public class A_67_进制求和 {
     public static void main(String[] args) {
         String a="111111111";
         String b="1";
