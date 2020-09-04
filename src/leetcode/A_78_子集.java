@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class 子集_78 {
+public class A_78_子集 {
     static List<List<Integer>> ans=new ArrayList<>();
     public static void main(String[] args) {
         subsets(new int[]{1,2,3});
