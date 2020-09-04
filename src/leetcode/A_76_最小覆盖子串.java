@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class 最小覆盖子串_76 {
+public class A_76_最小覆盖子串 {
     static Map<Character, Integer> ori = new HashMap<Character, Integer>();
     static Map<Character, Integer> cnt = new HashMap<Character, Integer>();
     public static void main(String[] args) {
