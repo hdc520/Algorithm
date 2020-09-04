@@ -1,6 +1,6 @@
 package leetcode;
 
-public class 柱状图中最大的矩形面积_84 {
+public class A_84_柱状图中最大的矩形面积 {
     public static void main(String[] args) {
         System.out.println(largestRectangleArea(new int[]{2,1,5,6,2,3}));
     }
