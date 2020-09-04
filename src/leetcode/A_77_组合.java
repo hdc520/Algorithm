@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class 组合_77 {
+public class A_77_组合 {
     static List<List<Integer>> ans=new ArrayList<>();
     public static void main(String[] args) {
         combine(4,2);
