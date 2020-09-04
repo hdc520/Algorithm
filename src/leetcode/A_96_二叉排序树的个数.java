@@ -1,6 +1,6 @@
 package leetcode;
 
-public class 二叉排序树的个数_96 {
+public class A_96_二叉排序树的个数 {
     /*
     假设n个节点存在二叉排序树的个数是G(n)，令f(i)为以i为根的二叉搜索树的个数
     则G(n)=f(1)+f(2)+f(3)+f(4)+...+f(n)
