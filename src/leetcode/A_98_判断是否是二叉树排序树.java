@@ -2,7 +2,7 @@ package leetcode;
 
 import comAlgo.tree.TreeNode;
 
-public class 判断是否是二叉树排序树_98 {
+public class A_98_判断是否是二叉树排序树 {
     /*
     （1）利用左右子树的最大与最小值判断
     （2）利用二叉排序树中序遍历是有序的性质判断
