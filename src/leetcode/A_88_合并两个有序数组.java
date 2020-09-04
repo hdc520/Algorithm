@@ -1,6 +1,6 @@
 package leetcode;
 
-public class 合并两个有序数组_88 {
+public class A_88_合并两个有序数组 {
     public static void main(String[] args) {
         int nums1[]=new int[]{1,2,3,0,0,0};
         int nums2[]=new int[]{2,5,6};
