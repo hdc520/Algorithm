@@ -1,6 +1,6 @@
 package leetcode;
 
-public class 数字反转_7 {
+public class A_7_数字反转 {
     /*
     利用Java中的异常来解决类型溢出问题
      */
