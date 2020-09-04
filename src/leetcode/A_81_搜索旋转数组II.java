@@ -1,6 +1,6 @@
 package leetcode;
 
-public class 搜索旋转数组II_81 {
+public class A_81_搜索旋转数组II {
     public static void main(String[] args) {
         System.out.println(search(new int[]{2,2,2,2,2,5,6,2,2,2},5));
     }
