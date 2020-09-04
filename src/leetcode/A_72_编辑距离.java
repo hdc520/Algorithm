@@ -1,6 +1,6 @@
 package leetcode;
 
-public class 编辑距离_72 {
+public class A_72_编辑距离 {
     public static void main(String[] args) {
         System.out.println(minDistance("horse","ros"));
     }
