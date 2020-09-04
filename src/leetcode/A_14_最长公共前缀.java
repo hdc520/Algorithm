@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class 最长公共前缀_14 {
+public class A_14_最长公共前缀 {
     /*
     先排序，然后取第一个字符串和最后一个字符串进行比较求得最长公共子序列；
      */
