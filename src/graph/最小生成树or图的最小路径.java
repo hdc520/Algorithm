@@ -7,6 +7,7 @@ public class 最小生成树or图的最小路径 {
         int connections[][]=new int[][]{{1,2,5},{1,3,6},{2,3,1},{4,2,3}};
         //记得判断边数与N的大小。
         Map<Integer,List<int[]>> map=new HashMap<>();
+        //将同一节点的边放到list中
         for(int [] connect:connections){
             if(map.containsKey(connect[0])){
                 int endCost[]=new int[]{connect[1],connect[2]};
