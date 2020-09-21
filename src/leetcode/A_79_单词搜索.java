@@ -41,4 +41,21 @@ public class A_79_单词搜索 {
            return;
        }
     }
+    public boolean dfs(char[][] board,String word,int i,int j,boolean visited[][],int index){
+        if(index==word.length()){
+            return true;
+        }
+        if(i<0||j<0||i>=board.length||j>=board[0].length||board[i][j]!=word.charAt(index)||visited[i][j]){
+            return false;
+        }
+        if(visited[i][j]==false){
+            visited[i][j]=true;
+            if(dfs(board,word,i,j-1,visited,index+1)||dfs(board,word,i-1,j,visited,index+1)||
+                    dfs(board,word,i,j+1,visited,index+1)||dfs(board,word,i+1,j,visited,index+1)){
+                return true;
+            }
+            visited[i][j]=false;
+        }
+        return false;
+    }
 }
