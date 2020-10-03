@@ -20,4 +20,17 @@ public class 最近公共祖先 {
         }
         return null;
     }
+
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if(root==p||root==null||root==q){
+            return root;
+        }
+        TreeNode left=lowestCommonAncestor(root.left,p,q);
+        TreeNode right=lowestCommonAncestor(root.right,p,q);
+        if(left==null||right==null){
+            return left==null?right:left;
+        }else{
+            return root;
+        }
+    }
 }
