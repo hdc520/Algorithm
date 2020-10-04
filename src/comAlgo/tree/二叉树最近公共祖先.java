@@ -1,6 +1,6 @@
 package comAlgo.tree;
 
-public class 最近公共祖先 {
+public class 二叉树最近公共祖先 {
     public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null) {//当遍历到叶结点后就会返回null
             return root;
