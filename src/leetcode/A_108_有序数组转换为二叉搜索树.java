@@ -2,7 +2,7 @@ package leetcode;
 
 import comAlgo.tree.TreeNode;
 
-public class 有序数组转换为二叉搜索树 {
+public class A_108_有序数组转换为二叉搜索树 {
     public TreeNode sortedArrayToBST(int nums[]){
         return dfs(nums,0,nums.length-1);
     }
