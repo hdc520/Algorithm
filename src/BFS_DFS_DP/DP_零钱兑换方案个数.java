@@ -3,7 +3,8 @@ package BFS_DFS_DP;
 import java.util.Arrays;
 
 public class DP_零钱兑换方案个数 {
-    public int change(int amount, int[] coins) {
+    static int sum=0;
+    public int change2(int amount, int[] coins) {
         if(amount<=0){
             return 1;
         }
@@ -24,5 +25,27 @@ public class DP_零钱兑换方案个数 {
             }
         }
         return DP[n][amount];
+    }
+
+    //方法二
+    public static int change1(int amount, int[] coins) {
+        Arrays.sort(coins);
+        backTrack(amount,coins,0);
+        return sum;
+    }
+    public static void backTrack(int amount, int[] coins,int cur){
+        if(amount==0){
+            sum++;
+            return;
+        }
+        if(amount<0){
+            return;
+        }
+        for(int i=cur;i<coins.length;i++){
+            if(amount<0){
+                break;
+            }
+            backTrack(amount-coins[i],coins,i);
+        }
     }
 }
